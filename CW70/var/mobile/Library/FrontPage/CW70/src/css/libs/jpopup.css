@@ -1,0 +1,85 @@
+#jSystemPopup {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    width: 95%;
+    max-width: 320px;
+    height: auto;
+    max-height: 55vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 15px;
+    color: white;
+    z-index: 99999;
+    -webkit-animation: fadeitin 0.3s forwards;
+}
+@-webkit-keyframes fadeitin {
+    0% {
+        /*top:0;*/
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        /*top:30%;*/
+    }
+}
+.jSystemOptions { /* holds the buttons */
+    position: relative;
+    width: 80%;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.jSystemInput{
+    position: absolute;
+    top:-25px;
+    left:50%;
+    -webkit-transform:translate(-50%, 0);
+    font-size: 14px;
+}
+#jSystemYes, #jSystemNo, #jSystemOK{
+    position: absolute;
+    top: 5px;
+    color:white;
+    padding:5px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 20px;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+#jSystemYes {
+    right: 20px;
+    width: 30%;
+}
+#jSystemNo {
+    left: 20px;
+    width: 30%;
+}
+#jSystemOK {
+    position: absolute;
+    top: 5px;
+    left:50%;
+    -webkit-transform:translate(-50%);
+    width: 30%;
+}
+#jSystemMessage {
+    padding: 10px;
+    font-size: 12px;
+    overflow: scroll;
+    height: auto;
+    width: auto;
+    max-height: 100%;
+    text-align: justify;
+    text-justify: inter-word;
+    white-space: pre-line;
+    margin: 20px;
+    border-top: 0px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    color: white;
+}
+
+
+

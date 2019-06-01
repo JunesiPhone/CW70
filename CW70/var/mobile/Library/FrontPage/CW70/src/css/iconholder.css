@@ -1,0 +1,42 @@
+.iconHolder{
+	position: absolute;
+	left:38px;
+	bottom: 185px;
+	width: auto;
+	height: auto;
+	left:50%;
+	-webkit-transform:translate(-50%);
+	white-space: nowrap;
+	font-family: 'louis';
+}
+.icon{
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	margin-right:20px;
+	background-size: contain;
+	-webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.4);
+	-webkit-transform-origin: center center;
+	/*-webkit-transform:scale(0.8);*/
+}
+.icon:first-child{
+	margin-left:20px;
+}
+.badge{
+	position: absolute;
+	top:-5px;
+	margin-left:30px;
+	height: 15px;
+    padding: 0 6px;
+	background-color: red;
+	line-height: 15px;
+	font-size:12px;
+	text-align: center;
+	background-size: contain;
+	border-radius:99px;
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+.badge:empty{
+	display: none;
+}

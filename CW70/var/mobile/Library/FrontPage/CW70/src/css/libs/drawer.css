@@ -1,0 +1,189 @@
+body{
+    margin:0;
+    padding:0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    color:white;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    font-family: 'helvetica neue';
+    /*background-color: black;*/
+}
+.drawer_main{
+    position: absolute;
+    top:0;
+    left:0;
+    -webkit-transform:translate(0,0)translateZ(0)scale(0);
+    -webkit-transition: all  .2s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-scroll-snap-type: mandatory;
+    scroll-snap-type: x mandatory;
+    -webkit-scroll-snap-points-x: repeat(100%);
+    background-color: rgba(0,0,0,0.5);
+    -webkit-backdrop-filter:blur(10px);
+}
+.drawer_open{
+    -webkit-transform:translate(0,0)translateZ(0)scale(1.0);
+    visibility: visible;
+    opacity: 1;
+}
+.drawer_close_button{
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    width: 100%;
+    height: 100px;
+    z-index: 99;
+    display: none;
+    /*background-color: red;*/
+}
+.drawer_close_button::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    top:-900px;
+    width: 10px;
+    height: 900px;
+    /*background-color: red;*/
+    display: inline-block;
+}
+.drawer_close_button::before{
+    position: absolute;
+    content: "";
+    right: 0;
+    top:-900px;
+    width: 10px;
+    height: 900px;
+    /*background-color: red;*/
+    display: none;
+}
+.drawer_close_button_show{
+    display: block;
+}
+.drawer_icon{
+    background-size: cover;
+    display: inline-block;
+}
+.drawer_icon::before{
+    content: attr(badge);
+    position: absolute;
+    font-size: 12px;
+    display: block;
+    background-color: red;
+    color:white;
+    border-radius: 99px;
+    line-height: 15px;
+    padding: 2px;
+    padding: 0 5px;
+    margin-left:-10px;
+    margin-top:-5px;
+}
+
+.drawer_icon::after{
+    position: absolute;
+    content: attr(name);
+    text-align: center;
+    display: block;
+    font-size: 2.5vw;
+}
+.drawer_page{
+  position: relative;
+  top:50%;
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: -4px;
+  white-space: normal;
+  text-align: center;
+  box-sizing:border-box;
+  -webkit-transform:translateZ(0)translate(0%, -50%)scale(1);
+  border-radius: 20px;
+  -webkit-scroll-snap-align: start;
+  scroll-snap-align: start;
+  color:white;
+}
+.drawer_page::after{
+    content: attr(title);
+    position: absolute;
+    top:0px;
+    right:20px;
+    text-transform: uppercase;
+    font-size: 10px;
+    display: none;
+}
+/*.drawer_main > div:last-child{
+    position: relative;
+    margin-right: 0!important;
+    margin-left:100px!important;
+    background-color: red;
+    background-color: yellow;
+}*/
+.shortcutFolder{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:-25px;
+    top:0;
+    display: none;
+    -webkit-backdrop-filter:blur(10px);
+    z-index: 99999;
+}
+.shortcutFolderHolder{
+    position: absolute;
+    width: 60px;
+    height: auto;
+    max-height: 520px;
+    overflow: scroll;
+    display: block;
+    right:0px;
+    top:50%;
+    -webkit-transform:translate(0%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    z-index: 99999;
+    text-align: center;
+}
+.shortcutHolder{
+    position: absolute;
+    top:50%;
+    -webkit-transform:translate(0%, -50%);
+    right:0;
+    z-index: 99999;
+    background: rgba(0, 0, 0, 0.6);
+    -webkit-backdrop-filter:blur(10px);
+    display: none;
+}
+.shortcut{
+    text-transform: uppercase;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin-top:5px;
+}
+.drawerFolderIcon{
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    display: block;
+    margin:10px;
+    margin-top:10px;
+    margin-bottom:20px;
+}
+.drawerFolderIcon::after{
+    position: absolute;
+    left:0;
+    margin-top:44px;
+    width:100%;
+    font-size:7px;
+    content: attr(title);
+}

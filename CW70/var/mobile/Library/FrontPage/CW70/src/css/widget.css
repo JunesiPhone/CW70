@@ -1,0 +1,46 @@
+#widget{
+	position: absolute;
+	bottom:240px;
+	width: 300px;
+	height: 150px;
+	left:10px;
+	color:white;
+	pointer-events: none;
+}
+#day, #month{
+	position: absolute;
+}
+#day{
+	left:0;
+	font-family: 'hightide';
+	font-size: 60px;
+	opacity: 0.3;
+	width: 300px;
+	height: 100px;
+	overflow: visible;
+	padding-left:10px;
+	/* Fix clipping on script fonts */
+	line-height: 100px;
+	margin-top:-23px;
+}
+#month{
+	top:22px;
+	left:36px;
+	font-size:40px;
+	text-transform: uppercase;
+	font-family: 'sanfranheavy';
+}
+#time, #weatherString{
+	font-family: 'louis';
+	position: absolute;
+	left:36px;	
+	font-size: 12px;
+}
+#time{
+	top:85px;
+}
+#weatherString{
+	width: 265px;
+	top:110px;
+}
+

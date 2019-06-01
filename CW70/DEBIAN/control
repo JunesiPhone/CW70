@@ -1,0 +1,12 @@
+Package: com.junesiphone.cw70
+Name: CW70
+Version: 0.3
+Architecture: iphoneos-arm
+Depends: mobilesubstrate, com.junesiphone.frontpage
+Conflicts:
+Description: CW70 for FrontPage
+Maintainer: June <junesgraphics@gmail.com>
+Author: JunesiPhone <junesgraphics@gmail.com>
+Section: Addons (FrontPage)
+Depiction: http://www.junesiphone.com/supersecret/depiction.php?iframe=depiction/cw70
+tag: cydia::paid
