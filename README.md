@@ -20,3 +20,9 @@
 > CW70 Tip: Chrome has a white background, CW70 has a white text widget, set a black background to the body to see the widget.
 
 
+
+> Spectrum Library was not created by me. It is created by Brian Grinstead
+
+<a href="https://github.com/bgrins/spectrum" target="_blank">`Spectrum`</a>
+
+
