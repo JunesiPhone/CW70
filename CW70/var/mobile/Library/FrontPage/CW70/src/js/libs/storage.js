@@ -42,14 +42,16 @@ var lStorage = {
         }
     },
     replaceInAppArray: function(array, older, newer) {
+        //App is placed else where
         if (this[array].indexOf(newer) > -1) {
-            jPopup({
-                type: "alert",
-                message: "This app is already placed.",
-                yesButtonText: "OK"
-            });
+            var index1 = this[array].indexOf(older);
+            var index2 = this[array].indexOf(newer);
+            this[array][index1] = newer;
+            this[array][index2] = older;
+            this.saveStorage();
             return;
         }
+        //app isn't placed
         var index = this[array].indexOf(older);
         if (index !== -1) {
             this[array][index] = newer;
