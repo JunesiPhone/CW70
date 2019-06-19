@@ -1,6 +1,6 @@
 Package: com.junesiphone.cw70
 Name: CW70
-Version: 0.3
+Version: 0.4
 Architecture: iphoneos-arm
 Depends: mobilesubstrate, com.junesiphone.frontpage
 Conflicts:
